@@ -1,72 +1,132 @@
 # 🌙✨ Dream Portal — Automated UI Testing Framework
 
-Welcome to the **Dream Portal automated testing framework** — a modern, scalable, and maintainable Selenium UI automation suite built with **Java**, **TestNG**, and **Page Object Model (POM)** patterns 🚀.  
-This framework validates the functionality of the Dream Portal web application and includes enhanced features like reporting, assertions, window handling** 🧠💡. :contentReference[oaicite:0]{index=0}
+Welcome to **Dream Portal**, a scalable Selenium Automation Framework built using **Java, Selenium WebDriver, TestNG, and Maven**.  
+This project follows the **Page Object Model (POM)** design pattern to maintain clean, reusable, and structured automation code.
 
 ---
 
-## 🚀 Features
+## 🚀 Project Overview
 
-✅ **🧪 UI Automation with Selenium WebDriver**  
-Automates end-to-end UI tests for the Dream Portal web app. :contentReference[oaicite:1]{index=1}
+Dream Portal is designed to automate UI testing of a web application with structured test execution, reusable page classes, failure handling, and reporting.
 
-✅ **📚 Page Object Model (POM)**  
-Clean separation of page logic and test logic for maintainability and reuse. :contentReference[oaicite:2]{index=2}
+---
 
-✅ **🧰 TestNG Integration**  
-Powerful test structure, grouping, execution control & assertions. :contentReference[oaicite:3]{index=3}
+## ✨ Key Features
 
-✅ **📊 Reporting**  
-HTML or TestNG reports to inspect pass / fail status and logs. :contentReference[oaicite:4]{index=4}
-
-✅ **🔀 Window & Tab Handling**  
-Validates UI behaviors involving multiple browser windows. :contentReference[oaicite:5]{index=5}
-
+✅ 🧪 End-to-End UI Automation  
+✅ 📚 Page Object Model (POM) Architecture  
+✅ 🧩 TestNG Integration  
+✅ 📊 HTML/TestNG Reports  
+✅ 📸 Screenshot Capture on Failure  
+✅ 🔀 Browser & Window Handling  
+✅ ⚙️ Maven Build Management  
+✅ 🧼 Clean & Maintainable Code  
 
 ---
 
 ## 📁 Project Structure
+
+```
 dream-portal/
+│
 ├── .mvn/
 ├── src/
-│ ├── main/
-│ └── test/
-│ ├── java/
-│ │ ├── pages/ 🧾 Page object definitions
-│ │ ├── tests/ 🔍 Test classes
-│ │ └── utils/ ⚙️ Helpers & utilities
-│ └── resources/
-├── pom.xml 📦 Maven configuration
-└── README.md 📘 This file
-
+│   ├── main/
+│   └── test/
+│       ├── java/
+│       │   ├── pages/            # Page Object Classes
+│       │   ├── tests/            # Test Classes
+│       │   ├── testcomponents/   # Base & Reusable Components
+│       │   └── utils/            # Utilities
+│       └── resources/
+│
+├── pom.xml
+└── README.md
+```
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Technology | Purpose |
-|------------|---------|
-| 🟦 **Java** | Language for framework and tests |
-| 🧪 **TestNG** | Test execution and assertions |
-| 🤖 **Selenium WebDriver** | Browser automation |
-| 🔧 **Maven** | Dependency & build management |
-| 🧩 POM Pattern | Design for scalable test code |
+- ☕ Java  
+- 🤖 Selenium WebDriver  
+- 🧪 TestNG  
+- 📦 Maven  
+- 🧩 Page Object Model (Design Pattern)
 
 ---
 
-## ⚡ Getting Started
+## ⚡ Prerequisites
 
-### 🧰 Requirements
-
-✔ Java (JDK 11+)  
-✔ Maven  
-✔ Chrome / Firefox Browser & WebDriver binaries
+✔ JDK 11+  
+✔ Maven Installed  
+✔ Chrome / Firefox Browser  
+✔ WebDriver Executable  
+✔ IntelliJ / Eclipse IDE  
 
 ---
 
-### 🚀 Setup
+## 🚀 How to Run
 
-1. **Clone repository**
-```bash
+### 1️⃣ Clone Repository
+
+```
 git clone https://github.com/madhanqa08/dream-portal.git
+```
+
+### 2️⃣ Navigate to Folder
+
+```
+cd dream-portal
+```
+
+### 3️⃣ Install Dependencies
+
+```
 mvn clean install
+```
+
+### 4️⃣ Run Tests
+
+```
+mvn test
+```
+
+---
+
+## 🧠 Framework Design
+
+🔹 Each page is represented as a separate class (POM).  
+🔹 Test classes call reusable methods from page classes.  
+🔹 Base setup handles browser initialization and teardown.  
+🔹 Screenshots are captured automatically on failures.  
+🔹 Reports are generated after execution.
+
+---
+
+## 📊 Automation Flow
+
+1. Launch Browser  
+2. Navigate to Application  
+3. Perform Actions  
+4. Validate Results  
+5. Capture Screenshot (if failure)  
+6. Generate Report  
+
+---
+
+## 🛡️ Best Practices
+
+✔ Separation of Concerns  
+✔ Reusable Code  
+✔ Proper Naming Conventions  
+✔ Scalable Framework Design  
+
+---
+
+## 👨‍💻 Author
+
+**Madhan Kumar B**  
+QA Automation Engineer | Selenium | Java | TestNG  
+
+---
